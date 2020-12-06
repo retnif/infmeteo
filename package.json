@@ -1,0 +1,53 @@
+{
+  "name": "webpack-static-html-pages",
+  "version": "1.0.0",
+  "description": "Example of a static website assembled by using webpack v4",
+  "keywords": [
+    "webpack",
+    "static",
+    "starter",
+    "html",
+    "pages"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "normalize.css": "^8.0.1"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack serve --config webpack.config.js --mode development",
+    "start:dist": "http-server dist --port ${PORT:-8080}",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js --mode production",
+    "preview": "npm run build && npm run start:dist"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.0.1",
+    "ejs-webpack-loader": "^2.2.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "http-server": "^0.12.3",
+    "mini-css-extract-plugin": "^1.3.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^4.2.3",
+    "url-loader": "^4.1.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0",
+    "babel-eslint": "^10.1.0",
+    "eslint-plugin-prettier": "^3.2.0",
+    "copy-webpack-plugin": "^6.3.2"
+  },
+  "standard": {
+    "env": [
+      "node",
+      "es6"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+footer {
+  position: fixed; /* Фиксированное положение */
+  left: 0;
+  bottom: 0; /* Левый нижний угол */
+  padding: 10px; /* Поля вокруг текста */
+  width: 100%; /* Ширина слоя */
+}
+.package-featured {
+  margin-left: auto;
+  margin-right: auto;
+  width: 6em;
+}

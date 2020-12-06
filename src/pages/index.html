@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <%= require('ejs-webpack-loader!./partials/meta.html')() %>
+
+    <title>Infmeteo</title>
+</head>
+
+<body>
+    <%= require('ejs-webpack-loader!./partials/header.html')({ page: 'index' }) %>
+
+    <main>
+        <div class="pricing-table">
+            <div class="package-featured">
+                <p class="package-name"></p>
+                <hr>
+                <p class="price"></p>
+                <p class="disclaimer"></p>
+                <hr>
+                <ul class="features">
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="weather-item add-city-wrapper d-flex align-items-center flex-column">
+            <div class="city-input-wrapper mt-auto">
+                <p>Add new city</p>
+                <input id="autoComplete" name="city-input" autocomplete="off" placeholder="Input city name">
+            </div>
+            <div class="autobox"></div>
+
+            <div id="resultWrapper mb-auto">
+
+            </div>
+        </div>
+
+    </main>
+
+    <%= require('ejs-webpack-loader!./partials/footer.html')() %>
+</body>
+
+</html>
